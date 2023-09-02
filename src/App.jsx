@@ -1,7 +1,13 @@
-import "./App.css";
+import Header from "./components/Header";
+import Presentation from "./components/Presentation";
 
 function App() {
-  return <></>;
+  return (
+    <div className="w-full h-full">
+      <Header />
+      <Presentation />
+    </div>
+  );
 }
 
 export default App;
