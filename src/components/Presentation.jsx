@@ -2,9 +2,9 @@ import { animate, motion } from "framer-motion";
 
 export default function Presentation() {
   return (
-    <>
+    <section className="h-full flex flex-col items-center">
       {/* text section */}
-      <section className="max-w-5xl flex flex-col justify-center mt-44  mx-auto  text-white ">
+      <div className="max-w-5xl flex flex-col justify-end mx-auto h-[50%]  text-white">
         <motion.div
           initial={{ x: -5000 }}
           animate={{ x: 0 }}
@@ -36,9 +36,9 @@ export default function Presentation() {
             loves to build projects and create things for people.
           </p>
         </motion.div>
-      </section>
+      </div>
       {/* Button section */}
-      <section className="max-w-5xl mx-auto mt-8 font-game">
+      <div className="max-w-5xl mt-8 mx-auto font-game">
         <motion.div
           className="mx-auto w-full text-center hover:opacity-80 md:block hidden "
           animate={{ x: [-5000, 0, 300] }}
@@ -58,7 +58,7 @@ export default function Presentation() {
         >
           <button className="text-xl text-project-green">Projects →</button>
         </motion.div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 }
