@@ -39,26 +39,25 @@ export default function Presentation() {
       </section>
       {/* Button section */}
       <section className="max-w-5xl mx-auto mt-8 font-game">
-        <div className="w-1/2 mx-auto text-center md:grid md:grid-cols-2 md:gap-x-24">
-          <motion.div
-            animate={{ scale: [0, 1.5, 1] }}
-            transition={{ duration: 0.5, delay: 2 }}
+        <motion.div
+          className="mx-auto w-full text-center hover:opacity-80 md:block hidden "
+          animate={{ x: [-5000, 0, 300] }}
+        >
+          <button
+            className="text-xl text-project-green hover:translate-x-2 transition-transform duration-75"
+            onPointerDownCapture={(e) => e.stopPropagation()}
           >
-            <button className="bg-project-green p-2 w-full border-2 border-black font-regular text-xl">
-              Projects
-            </button>
-          </motion.div>
-          <div></div>
-          <div></div>
-          <motion.div
-            animate={{ scale: [0, 1.5, 1] }}
-            transition={{ duration: 0.5, delay: 2.5 }}
-          >
-            <button className="bg-project-green p-2 w-full border-2 border-black font-regular text-xl mt-3 sm:mt-0">
-              Contact me
-            </button>
-          </motion.div>
-        </div>
+            Projects →
+          </button>
+        </motion.div>
+
+        <motion.div
+          className="mx-auto w-full text-center hover:opacity-80 md:hidden block"
+          animate={{ x: [-5000, 0] }}
+          transition={{ duration: 1 }}
+        >
+          <button className="text-xl text-project-green">Projects →</button>
+        </motion.div>
       </section>
     </>
   );
