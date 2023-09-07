@@ -14,9 +14,9 @@ function App() {
       <nav>
         <NavigationAside />
       </nav>
-      <section id="projects">
+      {/* <section id="projects">
         <h1>Hola mundo!</h1>
-      </section>
+      </section> */}
     </div>
   );
 }

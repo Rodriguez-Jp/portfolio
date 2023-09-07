@@ -1,8 +1,14 @@
 import { animate, motion } from "framer-motion";
-
+import { Gradient } from "../helpers/gradient";
 export default function Presentation() {
+  const gradient = new Gradient();
+
+  gradient.initGradient("#gradient-canvas");
   return (
-    <section className="h-full flex flex-col items-center">
+    <section className=" flex flex-col items-center relative">
+      <div className="absolute -z-10 ">
+        <canvas id="gradient-canvas" data-transition-in className="h-full" />
+      </div>
       {/* text section */}
       <div className="max-w-5xl flex flex-col justify-end mx-auto h-[50%]  text-white">
         <motion.div
