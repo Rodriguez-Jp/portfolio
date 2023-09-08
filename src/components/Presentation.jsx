@@ -1,16 +1,10 @@
 import { animate, motion } from "framer-motion";
-import { Gradient } from "../helpers/gradient";
-export default function Presentation() {
-  const gradient = new Gradient();
 
-  gradient.initGradient("#gradient-canvas");
+export default function Presentation() {
   return (
-    <section className=" flex flex-col items-center relative">
-      <div className="absolute -z-10 ">
-        <canvas id="gradient-canvas" data-transition-in className="h-full" />
-      </div>
+    <section className=" h-full flex flex-col items-center relative">
       {/* text section */}
-      <div className="max-w-5xl flex flex-col justify-end mx-auto h-[50%]  text-white">
+      <div className="max-w-5xl flex flex-col justify-end mx-auto h-[50%] text-white z-20">
         <motion.div
           initial={{ x: -5000 }}
           animate={{ x: 0 }}
@@ -44,7 +38,7 @@ export default function Presentation() {
         </motion.div>
       </div>
       {/* Button section */}
-      <div className="max-w-5xl mt-8 mx-auto font-game">
+      <div className="max-w-5xl mt-8 mx-auto font-game z-20">
         <motion.div
           className="mx-auto w-full text-center hover:opacity-80 md:block hidden "
           animate={{ x: [-5000, 0, 300] }}

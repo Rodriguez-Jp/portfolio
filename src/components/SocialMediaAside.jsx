@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 export default function SocialMediaAside() {
   return (
     <motion.div
-      className="fixed bottom-0 left-10 hidden md:block"
+      className="fixed bottom-0 left-10 hidden md:block z-20"
       animate={{ y: [1200, 0] }}
       transition={{ duration: 0.5, delay: 2 }}
     >

@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <header className="flex justify-between text-white font-game p-4">
+    <header className="flex justify-between text-white font-game p-4 z-20">
       <div className="flex justify-center items-center">
         <p className="text-xl">Juan Rodriguez</p>
       </div>
