@@ -1,6 +1,6 @@
-import { animate, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
-export default function Presentation() {
+export default function PresentationPage() {
   return (
     <section className=" h-full flex flex-col items-center relative mt-24 md:mt-0">
       {/* text section */}

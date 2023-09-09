@@ -16,13 +16,3 @@
   --gradient-color-3: #1f2e51;
   --gradient-color-4: #045671;
 }
-
-body {
-  background: rgb(20, 46, 67);
-  background: linear-gradient(
-    310deg,
-    rgba(20, 46, 67, 1) 0%,
-    rgb(12, 68, 80) 50%,
-    rgba(31, 46, 81, 1) 100%
-  );
-}

@@ -2,9 +2,9 @@ import { useEffect } from "react";
 import { Gradient } from "./helpers/Gradient";
 import Header from "./components/Header";
 import NavigationAside from "./components/NavigationAside";
-import Presentation from "./components/PresentationPage";
+import PresentationPage from "./components/PresentationPage";
 import SocialMediaAside from "./components/SocialMediaAside";
-import Projects from "./components/ProjectsPage";
+import ProjectsPage from "./components/ProjectsPage";
 
 function App() {
   useEffect(() => {
@@ -23,7 +23,7 @@ function App() {
           />
         </div>
         <Header />
-        <Presentation />
+        <PresentationPage />
       </div>
       <nav>
         <SocialMediaAside />
@@ -31,7 +31,7 @@ function App() {
       <nav>
         <NavigationAside />
       </nav>
-      <Projects />
+      <ProjectsPage />
     </>
   );
 }
