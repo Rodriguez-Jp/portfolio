@@ -43,20 +43,23 @@ export default function PresentationPage() {
           className="mx-auto w-full text-center hover:opacity-80 md:block hidden "
           animate={{ x: [-5000, 0, 300] }}
         >
-          <button
+          <a
+            href="#projects"
             className="text-xl text-project-green hover:translate-x-2 transition-transform duration-75"
             onPointerDownCapture={(e) => e.stopPropagation()}
           >
             Projects →
-          </button>
+          </a>
         </motion.div>
-
+        {/* There are two project buttons due to animation, needed because there were 2 different animation in the different screen sizes */}
         <motion.div
           className="mx-auto w-full text-center hover:opacity-80 md:hidden block"
           animate={{ x: [-5000, 0] }}
           transition={{ duration: 1 }}
         >
-          <button className="text-xl text-project-green">Projects →</button>
+          <a href="#projects" className="text-xl text-project-green">
+            Projects →
+          </a>
         </motion.div>
       </div>
     </section>
