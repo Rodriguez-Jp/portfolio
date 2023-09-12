@@ -1,33 +1,8 @@
-import { useState } from "react";
-import toast, { Toaster } from "react-hot-toast";
+import { Toaster } from "react-hot-toast";
+import useForm from "../hooks/useForm";
 
 export default function ContactMePage() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-
-  const emptyFieldErrorToast = () => toast.error("Please fill all the fields");
-  const invalidEmailErrorToast = () => toast.error("Please type a valid email");
-  const successToast = () => toast.success("Email sent!");
-
-  const handleSubmit = (e) => {
-    //Validates the input
-    const emailRegex = /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/;
-
-    if (name.trim() === "" || email.trim() === "" || message.trim() === "") {
-      e.preventDefault();
-      emptyFieldErrorToast();
-      return;
-    }
-
-    if (!emailRegex.test(email)) {
-      e.preventDefault();
-      invalidEmailErrorToast();
-      return;
-    }
-
-    successToast();
-  };
+  const { handleSubmit, setName, setEmail, setMessage } = useForm();
 
   return (
     <section className="mt-20 md:max-w-4xl mx-auto p-5 md:p-0" id="contact-me">
