@@ -35,7 +35,7 @@ export default function Project({ project }) {
       {/* Button zone*/}
       <div className="px-5 font-game p-5 flex justify-evenly">
         <a href={projectLink} target="_blank" rel="noopener noreferrer">
-          Ver
+          Live demo
         </a>
         <a href={githubLink} target="_blank" rel="noopener noreferrer">
           Github

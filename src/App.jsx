@@ -5,8 +5,11 @@ import NavigationAside from "./components/NavigationAside";
 import PresentationPage from "./components/PresentationPage";
 import SocialMediaAside from "./components/SocialMediaAside";
 import ProjectsPage from "./components/ProjectsPage";
+import ContactMePage from "./components/ContactMePage";
+import Footer from "./components/Footer";
 
 function App() {
+  // Loads the gradient effect
   useEffect(() => {
     const gradient = new Gradient();
     gradient.initGradient("#gradient-canvas");
@@ -32,6 +35,8 @@ function App() {
         <NavigationAside />
       </nav>
       <ProjectsPage />
+      <ContactMePage />
+      <Footer />
     </>
   );
 }

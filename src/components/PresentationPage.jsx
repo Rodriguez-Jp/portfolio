@@ -2,7 +2,10 @@ import { motion } from "framer-motion";
 
 export default function PresentationPage() {
   return (
-    <section className=" h-full flex flex-col items-center relative mt-24 md:mt-0">
+    <section
+      className=" h-full flex flex-col items-center relative mt-24 md:mt-0"
+      id={"presentation"}
+    >
       {/* text section */}
       <div className="max-w-5xl flex flex-col justify-end mx-auto h-[50%] text-white z-20">
         <motion.div
