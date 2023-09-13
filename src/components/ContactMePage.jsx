@@ -18,11 +18,7 @@ export default function ContactMePage() {
         </h1>
       </div>
       <div className="md:max-w-3xl mx-auto mt-7 font-game">
-        <form
-          onSubmit={handleSubmit}
-          action="https://formsubmit.co/juanrdrz16@gmail.com"
-          method="POST"
-        >
+        <form onSubmit={handleSubmit}>
           <div className="flex flex-col">
             <input
               type="text"
