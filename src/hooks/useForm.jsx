@@ -8,7 +8,6 @@ export default function useForm() {
 
   const emptyFieldErrorToast = () => toast.error("Please fill all the fields");
   const invalidEmailErrorToast = () => toast.error("Please type a valid email");
-  const successToast = () => toast.success("Email sent!");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -17,17 +16,16 @@ export default function useForm() {
     const emailRegex = /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/;
 
     if (name.trim() === "" || email.trim() === "" || message.trim() === "") {
-      // e.preventDefault();
       emptyFieldErrorToast();
       return;
     }
 
     if (!emailRegex.test(email)) {
-      // e.preventDefault();
       invalidEmailErrorToast();
       return;
     }
 
+    //Send the email through fetch API to make it usable in toast
     const fetchData = async () => {
       try {
         const query = await fetch(
@@ -53,6 +51,7 @@ export default function useForm() {
       }
     };
 
+    //Toast method to evaluate the fetch response
     toast.promise(fetchData(), {
       loading: "Sending...",
       error: "There was an error :(",

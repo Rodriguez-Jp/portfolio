@@ -23,9 +23,10 @@ const projects = [
     projectTitle: "MovieApp",
     projectDescription:
       "A movies app made with the TMDB API, using GlideJS, TailwindCSS and VanillaJS",
-    projectImg: "/imgs/sample_img.jpeg",
-    projectLink: "",
-    githubLink: "",
+    projectImg: "/imgs/MovieApp.png",
+    projectLink:
+      "https://6503ccad7c682f4576181fed--starlit-chebakia-bc9f06.netlify.app/",
+    githubLink: "https://github.com/Rodriguez-Jp/movieApp",
   },
   {
     id: 4,
