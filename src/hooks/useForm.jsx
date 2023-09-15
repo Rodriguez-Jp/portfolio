@@ -29,7 +29,7 @@ export default function useForm() {
     const fetchData = async () => {
       try {
         const query = await fetch(
-          "https://formsubmit.co/ajax/juanrdrz16@gmail.com",
+          `https://formsubmit.co/ajax/${import.meta.env.VITE_EMAIL}`,
           {
             method: "POST",
             headers: {
