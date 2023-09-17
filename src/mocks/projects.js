@@ -47,9 +47,9 @@ const projects = [
   },
   {
     id: 6,
-    projectTitle: "Coming soon...",
+    projectTitle: "QR Reader extension",
     projectDescription: "Coming soon..",
-    projectImg: "/imgs/sample_img.jpeg",
+    projectImg: "/imgs/QRcode.jpeg",
     projectLink: "",
     githubLink: "",
   },
