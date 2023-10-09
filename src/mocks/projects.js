@@ -48,10 +48,11 @@ const projects = [
   {
     id: 6,
     projectTitle: "QR Reader extension",
-    projectDescription: "Coming soon..",
-    projectImg: "/imgs/QRcode.jpeg",
+    projectDescription:
+      "A chrome extension to capture On-screen QR codes (Pending google approval to publish)",
+    projectImg: "/imgs/QRcode.png",
     projectLink: "",
-    githubLink: "",
+    githubLink: "https://github.com/Rodriguez-Jp/QR-Reader",
   },
 ];
 
